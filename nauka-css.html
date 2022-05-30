@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="nauka-html.html">Nauka html</a>
+        <a href="nauka-css.html">Nauka css</a>
+        <a href="nauka-js.html">Nauka JavaScript</a>
+        <a href="inne-notatki.html">Inne notatki</a>
+        <a href="przydatne-linki.html">Przydatne linki</a>
+        <a href="terminal.html">Terminal</a>
+        <a href="git-github.html">Git i GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <h1 class="main-header">Nauka css</h1>
+        <img src="css.jpg" width="300" alt="tablica z kodem">
+      </header>
+
+      <section>
+        <h2>Składnia reguły</h2>
+        <p>selektor{<br />właściwość: wartość;<br />}</p>
+        <h2 class="subtitle">Własności css:</h2>
+        <ul>
+          <li>color:</li>
+        </ul>
+
+        <h2 class="subtitle">Sposoby stylowania:</h2>
+        <ul>
+          <li>
+            &lang;znacznik style="color:yellow;"&rang;Treść&lang;/znacznik&rang;
+          </li>
+          <li>znacznik &lang;style&rang;<br />&lang;/style&rang;</li>
+          <li>
+            &lang;link href="style.css" rel="stylesheet" type="text/css"&rang;
+          </li>
+        </ul>
+
+        <h2 class="subtitle">Prawdziwe selektory:</h2>
+        <ul>
+          <li>
+            #id-moze być tylko jedno na stronie<br>
+            &lang;znacznik id="name"&rang;treść&lang;/znacznik&rang; <br />
+            #id { <br />
+            właściwość: wartość; <br />
+            }
+          </li>
+          <li>
+            .class <br>
+            &lang;znacznik class="name"&rang;treść&lang;/znacznik&rang; <br />
+            .class { <br />
+            właściwość: wartość; <br />
+            }
+          </li>
+          <li>element</li>
+          <li>!important-raczej nie uzywamy, nadpisuje wszystko inne</li>
+        </ul>
+
+        <h2 class="subtitle">Specyficzność w css</h2>
+            !important style="" #name .name element
+
+            <p>Jeśli specyficzność jest równa, pierwszeństwo ma selektor "blizej elementu"</p>
+
+            <h3>Nazewnictwo klas</h3>
+            <ul>
+                <li>uzywaj pojedynczych słów z języka angielskiego</li>
+                <li>nazywaj rzeczy zgodnie z ich funkcją na stronie</li>
+                <li>startuj z małej litery</li>
+                <li>nie zaczynaj od cyfr</li>
+                <li>jeśli musisz uzyć dwóch słów, uzyj kebab-case</li>
+                <li>staraj się, zeby element miał jedną klasę (nie zwiększaj specyficzności bez potrzeby)</li>
+            </ul>
+      </section>
+    </main>
+    <footer>Strona domowa Mini Mini</footer>
+  </body>
+</html>

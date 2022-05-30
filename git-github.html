@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="nauka-html.html">Nauka html</a>
+        <a href="nauka-css.html">Nauka css</a>
+        <a href="nauka-js.html">Nauka JavaScript</a>
+        <a href="inne-notatki.html">Inne notatki</a>
+        <a href="przydatne-linki.html">Przydatne linki</a>
+        <a href="terminal.html">Terminal</a>
+        <a href="git-github.html">Git i GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <h1 class="main-header">Git i GitHub</h1>
+      </header>
+
+      <section>
+        <h2 class="subtitle">Git</h2>
+        <p>Jest to system kontroli wersji stworzony
+           przez Linusa Torvaldsa (twórcę linuxa). <br>
+          Przydatny w sytuacji, gdy: </p>
+          <ul>
+            <li>Wczoraj działało...</li>
+            <li>Gdybym miał poprzednią wersję...</li>
+            <li>Skasowałem przez przypadek plik...</li>
+            <li>Chciałbym zrobić zmiany w kilku plikach,
+               ale móc cofnąć do obecnego stanu</li>
+            <li>Chcę pracować nad projektem grupowym...</li>
+          </ul>
+
+          <h3>Konfiguracja gita</h3>
+          <ul>
+            <li>git config --global.user.name "Jan Nowak"</li>
+            <li>git config --global user.email jannowak@example.com</li>
+  
+            <li>git --version</li>
+         
+            <li>git config --get user.name</li>
+          </ul>
+
+        <h2>Czym jest repozytorium?</h2>
+        <p>Repozytorium=projekt, czyli wszystkie pliki</p>
+
+        <h3>Tworzenie repozytorium</h3>
+        <p>get init</p>
+
+        <h3>Czym jest commit?</h3>
+        <p>Commit=stan projektu i opis tego co się zmieniło od ostatniego zapisu</p>
+
+        <h3>Status</h3>
+        <p>git status</p>
+
+        <h3>Dodanie nowych plików do commitowania</h3>
+        <p> git add .</p>
+
+        <h3>Zapisywane commitów</h3>
+        <p>git commit -m "initial commit"</p>
+
+        <h3>Pokazuje całą historię</h3>
+        <p>gitk</p>
+
+        <h2 class="subtitle">GitHub</h2>
+        <p></p>
+       
+      </section>
+    </main>
+    <footer>Strona domowa Mini Mini</footer>
+  </body>
+</html>

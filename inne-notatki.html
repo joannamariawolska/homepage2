@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="nauka-html.html">Nauka html</a>
+        <a href="nauka-css.html">Nauka css</a>
+        <a href="nauka-js.html">Nauka JavaScript</a>
+        <a href="inne-notatki.html">Inne notatki</a>
+        <a href="przydatne-linki.html">Przydatne linki</a>
+        <a href="terminal.html">Terminal</a>
+        <a href="git-github.html">Git i GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <h1 class="main-header">Ogólne notatki</h1>
+      </header>
+
+        <section>
+          <h2 class="subtitle">Kanban</h2>
+          <p>
+            Oznacza z japońskiego "spis widoczny". Składa się z trzech kolumn
+            (czasem więcej):
+          </p>
+          <ul>
+            <li>TO DO</li>
+            <li>DOING</li>
+            <li>DONE</li>
+          </ul>
+          <p>
+            Ułatwia śledzenie postępu nauki, pracy. Zaleca się trzymanie jednego
+            zadania w "doing"
+          </p>
+      </section>
+
+      <section>
+        <h2 class="subtitle">Opowieść o wężu, kebabie, wielbłądzie i Pascalu</h2>
+          <p>Nazywanie rzeczy:</p>
+          <ul>
+          <li>nie uzywamy polskich znaków</li>
+          <li>nie uzywamy spacji</li>
+          <li>najlepiej uzywać angielskich słów</li>
+          <li>trzymamy się jednego schematu (konsekwencja jest istotna)</li>
+          </ul>
+
+          <p>Konwencje nazewnictwa:</p>
+          <ul>
+            <li>camelCase</li>
+            <li>kebab-case</li>
+            <li>snake_case</li>
+          </ul>
+
+          <h2 class="subtitle">Jak działa przeglądarka?</h2>
+          <h3>HTTP</h3>
+          <p>Przeglądarka korzysta w większości przypadków z protokołu HTTP (HyperText Transfer Protocol).
+             HTTP to protokół do transportowania HTMLa i całej reszty strony. <br>
+            HTTPS-HyperText Transfer Protocol Secure</p>
+          <h3>URL</h3>
+            <p>
+              URL-Uniform Resource Locator <br>
+              Adres URL składa się z: <br>
+              https://cotenfrontend.pl:443/index.html?parametr=wartość <br>
+              protokół, host (adres serwera), port, super wazny/root, ściezka dostępu do zasobu, parametry
+            </p>
+            <h3>Request-response</h3>
+            <ol>
+              <li>Wpisuję w pasku adresu cotenfrontend.pl (enter)</li>
+              <li>Przeglądarka szuka serwera cotenfrontend.pl (DNS)</li>
+              <li>Po znalezieniu serwera odpytuje go o index (jeśli podamy sam adres serwera</li>
+              <li>Serwer wysyła do przeglądarki zawartość html</li>
+              <li>Przeglądarka wczytuje html i szuka wszystkich dodatkowych zasobów: style, skrypty, obrazki itp. i dla 
+                kazdego z zasobów wykonuje zapytanie
+              </li>
+              <li>Przeglądarka parsuje i renderuje stronę</li>
+            </ol>
+            <h3>Kody odpowiedzi HTTP</h3>
+            <ul>
+              <li>-100- poczekaj..</li>
+              <li>-200- OK</li>
+              <li>-30x- szukasz w złym miejscu-przekieruję Cię w dobre, bo wiem gdzie</li>
+              <li>-404- nie mam tego, czego potrzebujesz, sorry</li>
+              <li>-50x- nie czuję się najlepiej.. błąd wewnętrzny serwera</li>
+            </ul>
+      </section>
+
+      <section>
+        <h2>GIT</h2>
+        <p>Jest to system kontroli wersji.</p>
+      </section>
+
+    </main>
+    <footer>Strona domowa Mini Mini</footer>
+  </body>
+</html>
